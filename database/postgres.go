@@ -3,6 +3,8 @@ package database
 import (
 	"database/sql"
 	"fmt"
+
+	_ "github.com/lib/pq"
 )
 
 func ConnectDB(host, port, user, password, name string) (db *sql.DB, err error) {
