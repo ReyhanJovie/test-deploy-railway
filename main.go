@@ -2,6 +2,7 @@ package main
 
 import (
 	"net/http"
+	"os"
 
 	"github.com/gin-gonic/gin"
 )
@@ -15,5 +16,5 @@ func main() {
 		})
 	})
 
-	router.Run(":4444")
+	router.Run(os.Getenv("APP_PORT"))
 }
