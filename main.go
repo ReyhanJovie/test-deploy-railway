@@ -16,5 +16,5 @@ func main() {
 		})
 	})
 
-	router.Run(os.Getenv("APP_PORT"))
+	router.Run(":" + os.Getenv("PORT"))
 }
